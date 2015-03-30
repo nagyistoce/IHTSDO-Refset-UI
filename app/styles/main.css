@@ -1,0 +1,578 @@
+@font-face {
+    font-family: 'museo300';
+    src: url('fonts/Museo300-Regular-webfont.eot');
+    src: url('fonts/Museo300-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Museo300-Regular-webfont.woff2') format('woff2'),
+         url('fonts/Museo300-Regular-webfont.woff') format('woff'),
+         url('fonts/Museo300-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Museo300-Regular-webfont.svg#museo300') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'museo500';
+    src: url('fonts/Museo500-Regular-webfont.eot');
+    src: url('fonts/Museo500-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Museo500-Regular-webfont.woff2') format('woff2'),
+         url('fonts/Museo500-Regular-webfont.woff') format('woff'),
+         url('fonts/Museo500-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Museo500-Regular-webfont.svg#museo300') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@import "partials/base";
+
+@import "partials/resets";
+@import "partials/typography";
+@import "partials/layout";
+@import "partials/modules";
+@import "partials/grids";
+@import "partials/responsive";
+/* Pe-icon-7-stroke' */
+@font-face {
+  font-family: 'Pe-icon-7-stroke';
+  src: url("fonts/Pe-icon-7-stroke.eot?-9uki6c");
+  src: url("fonts/Pe-icon-7-stroke.eot?#iefix-9uki6c") format("embedded-opentype"), url("fonts/Pe-icon-7-stroke.woff?-9uki6c") format("woff"), url("fonts/Pe-icon-7-stroke.ttf?-9uki6c") format("truetype"), url("fonts/Pe-icon-7-stroke.svg?-9uki6c#Pe-icon-7-stroke") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 42, ../sass/partials/_typography.scss */
+[class^="pe-7s-"], [class*=" pe-7s-"] {
+  display: inline-block;
+  font-family: 'Pe-icon-7-stroke';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* Pe-icon-7-filled' */
+@font-face {
+  font-family: 'Pe-icon-7-filled';
+  src: url("fonts/Pe-icon-7-filled.eot?ug0rvd");
+  src: url("fonts/Pe-icon-7-filled.eot?#iefixug0rvd") format("embedded-opentype"), url("fonts/Pe-icon-7-filled.woff?ug0rvd") format("woff"), url("fonts/Pe-icon-7-filled.ttf?ug0rvd") format("truetype"), url("fonts/Pe-icon-7-filled.svg?ug0rvd#Pe-icon-7-filled") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 493, ../sass/partials/_typography.scss */
+[class^="pe-7f-"], [class*=" pe-7f-"] {
+  display: inline-block;
+  font-family: 'Pe-icon-7-filled';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.pe-fw {
+  width: 1.2857142857142858em;
+  text-align: center;
+}
+.pe-7f-lock:before {
+  content: "\e6bf";
+}
+.pe-7f-user:before {
+  content: "\e685";
+}
+.pe-7f-mail:before {
+  content: "\e6b9";
+}
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+ol, ul {
+  list-style: none;
+
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 00px;
+
+}
+
+body {
+  padding: 0;
+  font-family: 'museo300', serif;
+  background:#f6f6f6;
+}
+/*margins */
+.mtop-100 {
+  margin-top: 100px;
+}
+.mtop-25 {
+  margin-top: 25px;
+}
+.mtop-15 {
+  margin-top: 15px;
+}
+
+
+/*buttons*/
+.btn {
+  position: relative;
+  border: none;
+  color: #fff;
+  margin: 5px;
+  border-radius: 2px;
+}
+/*button colors */
+.btn-ihtsdoblue {
+  background-color: #00a6e5;
+}
+.btn-ihtsdogreen {
+  background: #55c69e;
+}
+.btn-ihtsdored {
+  background: #f35958;
+}
+.login-page .btn {
+  float: none !important;
+  display: block;
+  margin: 15px 0px 0px 0px;
+  padding: 14px 12px;
+}
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100px;
+  position: relative;
+}
+.background-white{
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+    display: block;
+}
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+.content {
+  margin-left: 281px;
+  padding: 15px;
+  overflow: auto;
+}
+.content .col-md-12{padding:0px 0px 10px 0px;}
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+.navbar-default {
+  background-color: #303030;
+  border-color: #131e25;
+}
+.navbar-brand {
+
+  height: 50px;
+  padding: 5px 15px;
+  font-size: 12px;
+  line-height: 20px;
+   position:absolute;
+   display:block;
+}
+.navbar-default .navbar-nav > li > a {color:#fff;line-height:19px;}
+.navbar-default .navbar-nav > li.navbar-brand > a {padding:0px}
+.navbar-default .navbar-nav > li > a:hover {color:#00a6e5;background-color:rgba(255, 255, 255, 0.05)}
+.navbar-default .navbar-nav > li > a:visited {color:#fff;}
+/*footer*/
+.footer a{color:#252f37;font-size:12px;}
+.footer a:hover{text-decoration:none;color:#00a4e4;}
+.footer a:active{text-decoration:none;color:#00a4e4;}
+.ihtsdo-social {max-width:300px;}
+.ihtsdo-social li{  position: relative;
+  display: block;
+  float:left;
+}
+.ihtsdo-copy ul{list-style:none;margin:0px;   -webkit-padding-start: 0px;}
+.ihtsdo-copy li{float:left; padding-right:15px}
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+.container{width:100%;}
+/*Typography*/
+h4, .h4 {
+  font-size: 14px;}
+  h3, .h3 {
+  font-size: 18px;margin-top:0px;}
+  /*Login Page */
+  .login-page {
+
+  padding: 0 30px 20px 30px;
+  padding-left: 30px;
+}
+.login-page .input-group-addon {
+  background: #e5e5e5;
+  border: none;
+  color: #303030;
+  padding: 6px 9px;
+}
+.input-group-addon:first-child {
+  border-right: 0;
+}
+.login-page .form-control {
+  height: 49px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+}
+.login-page .input-text {
+  font-size: 14px;
+  box-shadow: none;
+  padding: 7px 14px;
+}
+.input-group .form-control:last-child{
+	  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;}
+  .login-page i {
+  font-size: 26px;
+  color: #444444;
+}
+
+
+/* Dashboard */
+/* Refset Headings */
+.most-popular h3 {
+  padding-top: 10px;
+  font-weight: normal;
+  font-family: "museo300";
+}
+
+.most-popular h4 {
+  padding: 10px;
+  color: #fff;
+  font-weight: normal;
+  font-family: "museo300";
+}
+.most-popular .snomed-heading {
+  width: 20%;
+  float: left;
+  background-color: #009bd5;
+}
+.most-popular .refset-details {
+  width: 80%;
+  float: left;
+  background-color: #00a6e5;
+}
+/* Profile*/
+
+
+
+.profile__name {
+  font-size: 14px;
+}
+
+.profile {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #9a9a9a;
+  padding-right: 0px;
+  margin:0px;
+}
+.profile li {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+.profile i {
+  font-size: 24px;
+  vertical-align: middle;
+}
+.profile i.pe-7s-angle-down {
+  font-weight: bold;
+}
+.profile a {
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  padding-right: 18px;
+  padding-left: 18px;
+  height: 50px;
+  line-height: 50px;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.profile a:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.profile .dropdown-menu {
+  box-shadow: none;
+  border-radius: 0;
+  background-color: #444444;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+.profile .dropdown-menu a {
+  color: #9a9a9a;
+  padding: 15px;
+  padding-right: 59px;
+  height: auto;
+}
+.profile .dropdown-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: white;
+}
+.profile .dropdown-menu li {
+  display: block;
+}
+.profile .dropdown-menu i {
+  margin-right: 5px;
+}
+
+.profile__user {
+  line-height: 72px;
+  color: #9a9a9a;
+  font-size: 14px;
+}
+.profile__user:hover {
+  color: inherit;
+}
+.profile__user i {
+  font-size: 18px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.profile__name span {
+
+  color: white;
+}
+.profile__name i {
+  margin-left: 5px;
+}
+
+.profile__img {
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.profile--higlighted a {
+  color: white;
+}
+
+.profile__badge {
+  position: absolute;
+  right: 6px;
+  top: 18px;
+}
+
+.left-sidebar-nav__badge {
+  margin-left: 5px;
+}
+.rounded-image {
+  border-radius: 50%;
+  overflow: hidden;
+}
+/*sidebar*/
+.sidebar {
+  float: left;
+  width: 280px;
+  position: relative;
+  background: #f9f9f9;
+  border-right: 1px solid #e5e5e5;
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+
+.left-sidebar-nav {
+  list-style: none;
+    -webkit-padding-start: 0px;
+	  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+.left-sidebar-nav__link {
+  display: block;
+  color: #696969;
+  font-size: 14px;
+  font-family: "museo300";
+    background: #f6f7f6;
+  line-height: 40px;
+  box-shadow: inset 0 -1px 0 #e5e5e5;
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  transition: background 0.3s;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-right: 40px;
+   padding-left: 15px;
+}
+.left-sidebar-nav__link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+.left-sidebar-nav__link:after {
+  font-family: "Pe-icon-7-stroke" !important;
+  content: '\e684';
+  font-size: 22px;
+  position: absolute;
+  right: 20px;
+  color: #bcbcbc;
+}
+
+.left-sidebar-nav li:not(.left-sidebar-nav--active):hover .left-sidebar-nav__link {
+  background: #f6f7f6;
+  color: #2c2d2f;
+  box-shadow: inset 0 -1px 0 #ededed;
+}
+.left-sidebar-nav li:not(.left-sidebar-nav--active):hover .left-sidebar-nav__link .left-sidebar-nav__icon {
+  background: #5abdc6;
+}
+.left-sidebar-nav li:not(.left-sidebar-nav--active):hover .left-sidebar-nav__link:after {
+  color: #2c2d2f;
+}
+
+.left-sidebar-nav__icon {
+  display: inline-block;
+  background: #f6f6f6;
+  text-align: center;
+  width: 68px;
+  height: 68px;
+  margin-right: 21px;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  transition: background 0.3s;
+}
+.left-sidebar-nav__icon i {
+  font-size: 20px;
+  vertical-align: middle;
+}
+.left-sidebar-nav--active .left-sidebar-nav__icon {
+  background: #5fc5cf;
+  color: #fff;
+}
+
+.left-sidebar-nav--collapsible {
+  height: auto;
+}
+.left-sidebar-nav--collapsible.left-sidebar-nav--open .left-sidebar-nav__submenu, .left-sidebar-nav--collapsible:hover .left-sidebar-nav__submenu {
+  max-height: 500px;
+}
+.left-sidebar-nav--collapsible.left-sidebar-nav--open .left-sidebar-nav__link:after, .left-sidebar-nav--collapsible:hover .left-sidebar-nav__link:after {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.left-sidebar-nav__submenu {
+  max-height: 0;
+  -webkit-transition: max-height 0.5s ease-in-out;
+  -moz-transition: max-height 0.5s ease-in-out;
+  -o-transition: max-height 0.5s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
+  overflow: hidden;
+  box-shadow: inset 0 -1px 0 #e5e5e5;
+}
+.left-sidebar-nav__submenu i {
+  display: none;
+  font-size: 22px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.left-sidebar-nav__submenu li a {
+  display: block;
+  color: #696969;
+  background-color:#fff;
+  font-size: 12px;
+  line-height: 40px;
+  padding-left: 15px;
+  text-decoration: none;
+    box-shadow: inset 0 -1px 0 #e5e5e5;
+}
+.left-sidebar-nav__submenu li a:hover {
+  background: #fff;
+  color: #00a6e5;
+}
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 0px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+  .navbar {
+  border-radius: 0px;
+  margin-bottom:0px;
+}
+.navbar-nav {
+  position:absolute;
+  margin: 0;
+}
+
+}
