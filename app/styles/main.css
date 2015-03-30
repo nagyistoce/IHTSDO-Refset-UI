@@ -89,6 +89,40 @@
 .pe-7f-mail:before {
   content: "\e6b9";
 }
+.pe-7s-graph:before {
+  content: "\e64e";
+}
+.pe-7s-edit:before {
+  content: "\e659";
+}
+.pe-7s-close-circle:before {
+  content: "\e681";
+}
+.pe-7s-attention:before {
+  content: "\e67b";
+}
+.pe-7s-info:before {
+  content: "\e647";
+}
+.user.user--added .c-btn--check:after {
+  font-family: "Pe-icon-7-filled";
+  content: '\e6ed';
+}
+.c-btn--more:after {
+  font-family: "Pe-icon-7-stroke";
+  content: '\e623';
+  font-size: 28px;
+}
+.c-btn--check:after {
+  font-family: "Pe-icon-7-stroke";
+  content: '\e66c';
+  font-size: 28px;
+  position: absolute;
+  color: #00a6e5;
+}
+.pe-7f-map-marker:before {
+  content: "\e6b8";
+}
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -121,8 +155,188 @@ body {
 .mtop-15 {
   margin-top: 15px;
 }
+.media {
+  margin-top: 0;
+}
+.media>.pull-left {
+  margin-right: 10px;
+}
+/*Forms*/
+.input-text, .textarea {
+  width: 100%;
+  font-family: "museo300";
+  font-size: 12px;
+  padding: 7px;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+  margin-bottom: 10px;
+}
+.dropdown {
+  position: relative;
+  height: 30px;
+  background: #fff;
+  border-radius: 1px;
+  border: 1px solid #e5e5e5;
+}
+.dropdown::after {
+  content: "\e688";
+  font-family: "Pe-icon-7-stroke";
+  position: absolute;
+  right: 12px;
+  top: 4px;
+  color: #bebebe;
+  font-size: 18px;
+}
+.dropdown-select {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 6px 8px 6px 10px;
+  height: 28px;
+  line-height: 17px;
+  font-family: "museo300";
+  font-size: 12px;
+  color: #444;
+  background: #fff;
+  background: rgba(0, 0, 0, 0) !important;
+  border: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+.dropdown-select > option {
+  margin: 3px;
+  padding: 6px 8px;
+  text-shadow: none;
+  background: #f2f2f2;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#uploader {
+  display: none;
+}
 
-
+label[for=uploader] {
+  font-family: "museo300";
+  margin-top: 10px;
+  width: 100%;
+  padding: 11px;
+  background: #fff;
+  padding-left: 10px;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+  color: #444;
+  position: relative;
+  margin-bottom: 10px;
+}
+label[for=uploader]:after {
+  content: "+";
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  position: absolute;
+  right: 7px;
+  width: 20px;
+  top: 7px;
+  line-height: 20px;
+  background: #00a6e5;
+}
+.checkbox, .radio {
+  display: none;
+}
+.checkbox + label, .radio + label {
+  font-family: "museo300";
+  font-size: 12px;
+  color: #444;
+  padding-left: 20px;
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+  margin-top: 5px;
+  padding-top: 3px;
+}
+.checkbox:checked + label:before {
+  content: '✓';
+}
+.checkbox + label:before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  line-height: 14px;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.06);
+  color: #444;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+}
+.radio + label:before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.1);
+}
+.radio:checked + label:after {
+  display: block;
+}
+.radio + label:after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff;
+  display: none;
+}
+/*alerts*/
+.alert {
+  padding: 25px;
+  position: relative;
+  border: none;
+  border-radius: 2px;
+}
+.alert--icon {
+  font-size: 34px;
+  margin-right: 25px;
+}
+.alert--title {
+  font-family: "Museo500";
+  color: #444;
+  font-size: 14px;
+}
+.alert--text{
+  color: #9a9a9a;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.alert-negative {
+  background-color: #fef2f2;
+  color: #f35958;
+  border-color: #ebccd1;
+}
+.alert-warning {
+  background-color: #fff5dc;
+  color: #ff9c4b;
+}
+.alert-info {
+  background-color: #edf7fc;
+  color: #00a6e5;
+}
+.alert-dismissable .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
 /*buttons*/
 .btn {
   position: relative;
@@ -147,7 +361,146 @@ body {
   margin: 15px 0px 0px 0px;
   padding: 14px 12px;
 }
+/*Drop Lists*/
+.box__title {
+  font-family: "Museo300";
+  color: #444;
+  font-size: 16px;
+  display: inline-block;
+}
+.media:first-child {
+  margin-top: 0;
+}
+.user {
+  width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 10px 10px 5px 15px;
+  position: relative;
+}
+.user > .media-body {
+  padding-right: 50px;
+  padding-top: 4px;
+}
 
+.user__img {
+  width: 42px;
+  height: 42px;
+  margin-right: 26px !important;
+}
+
+.user__name {
+  font-size: 15px;
+  color: #444;
+}
+.user--added .user__name {
+  color: #444;
+}
+
+.user__location {
+  font-size: 12px;
+  color: #c8c8c8;
+}
+
+.accordion__details {
+  max-height: 0;
+  -webkit-transition: max-height 0.3s linear;
+  -moz-transition: max-height 0.3s linear;
+  -o-transition: max-height 0.3s linear;
+  transition: max-height 0.3s linear;
+}
+.accordion__details p {
+  color: #444;
+  font-size: 10px;
+  line-height: 30px;
+}
+input[type="checkbox"].btn-more-check:checked ~ .accordion__details {
+  max-height: 500px;
+}
+input[type="checkbox"].btn-more-check {
+  display: none;
+}
+.user.user--added .c-btn--check {
+  opacity: 1;
+}
+.user .c-btn--more {
+  position: absolute;
+  right: 20px;
+  top: 18px;
+}
+.c-btn--more {
+  color: #c8c8c8;
+  cursor: pointer;
+}
+.c-btn--check {
+  opacity: 0;
+  position: absolute;
+  right: 78px;
+  top: 26px;
+  cursor: pointer;
+  -webkit-transition: opacity 250ms linear;
+  -moz-transition: opacity 250ms linear;
+  -o-transition: opacity 250ms linear;
+  transition: opacity 250ms linear;
+}
+.accordion__details p span {
+  font-size: 12px;
+  margin-left: 5px;
+  color: #9a9a9a;
+}
+.accordion__details p:first-child {
+  padding-top: 25px;
+}
+.accordion__details .btn-badge {
+  margin-left: 5px;
+}
+
+.user__more {
+  text-align: center;
+  padding-top: 25px;
+}
+
+.user__more a {
+  font-size: 14px;
+  color: #9a9a9a;
+}
+
+.user__more a:hover {
+  text-decoration: none;
+  color: #444;
+}
+
+.user__more i {
+  font-size: 24px;
+  vertical-align: middle;
+  margin-right: 7px;
+}
+.accordion__details p {
+  color: #444;
+  font-size: 10px;
+  line-height: 20px;
+}
+/*Tables*/
+.table {
+  border: 1px solid #e5e5e5;
+  font-size: 14px;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.bg--orange {
+  background-color: #ff9c4b;
+   color:#fff;
+}
+.bg--green {
+  background-color: #55c69e;
+ color:#fff;
+}
+.bg--red {
+  background-color: #f35958;
+   color:#fff!important;
+}
+/*Body Content*/
 .wrapper {
   overflow: hidden;
   min-height: 100px;
@@ -488,12 +841,11 @@ h4, .h4 {
 
 .left-sidebar-nav__icon {
   display: inline-block;
-  background: #f6f6f6;
   text-align: center;
-  width: 68px;
-  height: 68px;
-  margin-right: 21px;
-  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  margin-left: -15px;
   -webkit-transition: background 0.3s;
   -moz-transition: background 0.3s;
   -o-transition: background 0.3s;
@@ -504,8 +856,8 @@ h4, .h4 {
   vertical-align: middle;
 }
 .left-sidebar-nav--active .left-sidebar-nav__icon {
-  background: #5fc5cf;
-  color: #fff;
+
+  color: #444;
 }
 
 .left-sidebar-nav--collapsible {
