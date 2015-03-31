@@ -9,9 +9,24 @@
  */
 angular.module('refset')
   .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    $scope.myData = [
+    {
+        "firstName": "Cox",
+        "lastName": "Carney",
+        "company": "Enormo",
+        "employed": true
+    },
+    {
+        "firstName": "Lorraine",
+        "lastName": "Wise",
+        "company": "Comveyer",
+        "employed": false
+    },
+    {
+        "firstName": "Nancy",
+        "lastName": "Waters",
+        "company": "Fuelton",
+        "employed": false
+    }
+];
   });

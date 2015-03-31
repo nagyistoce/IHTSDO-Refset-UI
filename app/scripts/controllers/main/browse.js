@@ -8,10 +8,9 @@
  * Controller of the refset
  */
 angular.module('refset')
-  .controller('BrowseCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('BrowseCtrl', 'RefsetList', function ($scope, RefsetList) {
+   RefsetList.get({}, function (refsetlist) {
+    $scope.description = refsetList.description;
+	
+   })
   });
