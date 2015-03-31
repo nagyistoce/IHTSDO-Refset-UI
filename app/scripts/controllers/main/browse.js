@@ -8,8 +8,10 @@
  * Controller of the refset
  */
 angular.module('refset')
-  .controller('BrowseCtrl', 'RefsetList', function ($scope, RefsetList) {
-   RefsetList.get({}, function (refsetlist) {
+  .controller('BrowseCtrl', 
+  function ($scope, RefsetList) {
+	   $scope.refsets = RefsetService.findAll();
+   RefsetList.get({}, function (refsetList) {
     $scope.description = refsetList.description;
 	
    })
