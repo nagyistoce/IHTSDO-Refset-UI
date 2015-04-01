@@ -1,44 +1,116 @@
-<div class="wrapper">
+<div class="wrapper wide-sidebar">
 		<aside class="sidebar">
 			<ul class="left-sidebar-nav">
-				<!--<li class="left-sidebar-nav--active">
-					<a class="left-sidebar-nav__link" href="#">
-						<span class="left-sidebar-nav__icon"></span>
-						Dashboard <span class="badge left-sidebar-nav__badge badge--red">8</span>
-					</a>
-				</li>
-				<li>
-					<a class="left-sidebar-nav__link" href="#">
-					
-						Spare
-					</a>
-				</li>-->
+
                 <li class="left-sidebar-nav--active">
 					<a class="left-sidebar-nav__link" href="#">
 						<span class="left-sidebar-nav__icon"><i class="icon pe-7s-edit"></i></span>
 						Show Metadata
 					</a>
 				</li>
+                   <li class="left-sidebar-nav--active">
+					<a class="left-sidebar-nav__link" href="#">
+						<span class="left-sidebar-nav__icon"><i class="icon pe-7s-edit"></i></span>
+						Export RF2 Delta
+					</a>
+				</li>
 				<li class="left-sidebar-nav--collapsible">
 					<a class="left-sidebar-nav__link" href="#">
-						Browse Refsets
+						Active Members With Inactive Concepts
 					</a>
 					<ul class="left-sidebar-nav__submenu">
-						<li><a href="#"><span>Browse Refsets</span></a></li>
-						<li><a href="#"><span>Register</span></a></li>
-                        <li><a href="#"><span>Login</span></a></li>
+						<li><div class="left-filters">	<input type="radio" id="inactive-concepts" name="input-radio" class="radio">
+                        <label for="inactive-concepts">Inactive Concepts </label>
+						<input type="active-concepts" id="radio-2" name="input-radio" class="radio">
+                        <label for="active-concepts">Active Concepts</label></div>	</li>
 					</ul>
 				</li>
-					<li class="left-sidebar-nav--collapsible">
+                <li class="left-sidebar-nav--collapsible">
 					<a class="left-sidebar-nav__link" href="#">
-						Useful tools
+						Member Status
 					</a>
 					<ul class="left-sidebar-nav__submenu">
-						<li><a href="#"><span>Help</span></a></li>
-						<li><a href="#"><span>IHTSDO Website</span></a></li>
-                        <li><a href="#"><span>Contact Support</span></a></li>
+						<li><div class="left-filters">	<input type="radio" id="inactive-member-status" name="input-radio" class="radio">
+                        <label for="inactive-member-status">Inactive</label>
+						<input type="radio" id="active-member-status" name="input-radio" class="radio">
+                        <label for="active-member-status">Active </label></div>	</li>
 					</ul>
 				</li>
+                
+                <li class="left-sidebar-nav--collapsible">
+					<a class="left-sidebar-nav__link" href="#">
+						Snomed Ct Module Id
+					</a>
+					<ul class="left-sidebar-nav__submenu">
+						<li><div class="left-filters">	
+                        <div class="dropdown">
+							<select name="Snomed-module" class="dropdown-select">
+								<option value="">Snomed Ct Core Module</option>
+								<option value="1">Snomed Ct Core Module</option>
+								<option value="2">Snomed Ct Core Module</option>
+								<option value="3">Snomed Ct Core Module</option>
+							</select>
+						</div>
+                        
+                        </div>	</li>
+					</ul>
+				</li>
+                <li class="left-sidebar-nav--collapsible">
+					<a class="left-sidebar-nav__link" href="#">
+						Modified Members
+					</a>
+					<ul class="left-sidebar-nav__submenu">
+						<li><div class="left-filters">	<input type="radio" id="inactive-members" name="inactive-members" class="radio">
+                        <label for="inactive-members">Inactive</label>
+						<input type="radio" id="active-members" name="active-members" class="radio">
+                        <label for="active-members">Active </label></div>	</li>
+					</ul>
+				</li>
+                <li class="left-sidebar-nav--collapsible">
+					<a class="left-sidebar-nav__link" href="#">
+						Published Members
+					</a>
+					<ul class="left-sidebar-nav__submenu">
+						<li><div class="left-filters">	<input type="radio" id="inactive-members" name="nonpublished-members" class="radio">
+                        <label for="nonpublished-members">Never Published</label>
+						<input type="radio" id="active-members" name="published-members" class="radio">
+                        <label for="published-members">Published Members </label></div>	</li>
+					</ul>
+				</li>
+                  <li class="left-sidebar-nav--collapsible">
+					<a class="left-sidebar-nav__link" href="#">
+					Effective Time
+					</a>
+					<ul class="left-sidebar-nav__submenu">
+						<li><div class="left-filters">	need to add date picker</li>
+					</ul>
+				</li>
+                 <li class="left-sidebar-nav--collapsible">
+					<a class="left-sidebar-nav__link" href="#">
+					Last Modified Date
+					</a>
+					<ul class="left-sidebar-nav__submenu">
+						<li><div class="left-filters">	need to add date picker</li>
+					</ul>
+				</li>
+                 <li class="left-sidebar-nav--collapsible">
+					<a class="left-sidebar-nav__link" href="#">
+					Last Updater
+					</a>
+					<ul class="left-sidebar-nav__submenu">
+						<li><div class="left-filters">	
+                        <div class="dropdown">
+							<select name="last-updater" class="dropdown-select">
+								<option value="">abu@ihtsdo.org</option>
+								<option value="1">rtu@ihtsdo.org</option>
+	
+							</select>
+						</div>
+                        
+                        </div>	</li>
+					</ul>
+				</li>
+					
 			</ul>
 		</aside> <!-- /left-sidebar-nav -->
         
@@ -49,33 +121,54 @@
         <div class="col-md-12">
        <div class="background-white">
     <div class="most-popular">
-<h3> Most Recent Refsets</h3>
-    <div class="wrapper">
-        <div class="snomed-heading">
-            <h4>Snomed CT</h4>
-            </div>
-        <div class="refset-details">
-             <h4>Reference Set Details</h4>
-            </div>
-   </div>
-   {{description}}</div></div>
-    </div>
-     <!--end row-->
-           <div class="col-md-12">
-       <div class="background-white">
-    <div class="most-popular">
-<h3> Most Popular Refsets</h3>
-    <div class="wrapper">
-        <div class="snomed-heading">
-            <h4>Snomed CT</h4>
-            </div>
-        <div class="refset-details">
-             <h4>Reference Set Details</h4>
-            </div>
+
+   <div class="wrapper">
+            <table class="table">
+							<thead>
+								<tr>
+									<th>Refset Title</th>
+									<th>Created By:</th>
+									<th>Language:</th>
+									<th>Refset Title</th>
+									<th>Created By:</th>
+									<th># of Members:</th>
+									<th>Views:</th>
+									<th>Downloads:</th>
+								</tr>
+                                <tr>
+									<th>Component Id:</th>
+									<th>Refset Id:</th>
+									<th>Module Id:</th>
+									<th>Latest Effective Time:</th>
+									</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Virtual therapeutic moiety simple reference set (foundation metadata concept)</td>
+									<td>pnema</td>
+									<td>en_US</td>
+									<td>2015-01-16</td>
+									<td class="bg--green">Active</td>
+									<td>3566</td>
+									<td>20</td>
+									<td>20</td>
+								</tr>
+							<tr>
+									<td>900000000000490003</td>
+									<td>900000000000461009</td>
+									<td>900000000000207008</td>
+									<td>2015-01-16</td>
+
+								</tr>
+								
+								
+							</tbody>
+						</table>
+   
    </div></div></div>
     </div>
      <!--end row-->
-  
+        
       
         </div>
 </div>

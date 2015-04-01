@@ -8,8 +8,7 @@
  *
  * Main module of the application.
  */
- 
-var refsetApp = angular
+angular
   .module('refset', [
     'ngAnimate',
     'ngAria',
@@ -24,7 +23,7 @@ var refsetApp = angular
     'LocalStorageModule',
     'ui.router'
   ])
-  refsetApp.config(function ($routeProvider) {
+  .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -46,7 +45,6 @@ var refsetApp = angular
         templateUrl: 'views/login.html',
         controller: 'LoginCtrl'
       })
-	  
       .otherwise({
         redirectTo: '/'
       });

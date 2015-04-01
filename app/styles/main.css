@@ -540,6 +540,7 @@ table {
   padding: 15px;
   overflow: auto;
 }
+.wide-sidebar .content {  margin-left: 321px;}
 .content .col-md-12{padding:0px 0px 10px 0px;}
 /* Custom page footer */
 .footer {
@@ -791,6 +792,12 @@ h4, .h4 {
   padding-bottom: 99999px;
 }
 
+.wide-sidebar .sidebar {
+ 
+  width: 320px;
+
+}
+
 .left-sidebar-nav {
   list-style: none;
     -webkit-padding-start: 0px;
@@ -906,6 +913,9 @@ h4, .h4 {
   background: #fff;
   color: #00a6e5;
 }
+.left-sidebar-nav__submenu li .left-filters{  font-size: 12px;
+  
+  padding: 7px 15px;}
   /* Remove the padding we set earlier */
   .header,
   .marketing,
