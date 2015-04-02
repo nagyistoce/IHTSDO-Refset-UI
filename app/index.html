@@ -128,12 +128,21 @@
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
-           <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-       <script src="scripts/controllers/browse.js"></script>
-       <script src="scripts/controllers/dashboard.js"></script>
-  <script src="scripts/controllers/login.js"></script>
-    <script src="scripts/controllers/register.js"></script>
-        <!-- endbuild -->
+        
+    <script src="scripts/app.js"></script>
+    <script src="scripts/config.js" ></script>
+    <script src="scripts/controllers/main/main.js"></script>
+    <script src="scripts/controllers/main/browse.js"></script>
+    <script src="scripts/controllers/main/dashboard.js"></script>
+    <script src="scripts/controllers/main/login.js"></script>
+    <script src="scripts/controllers/main/register.js"></script>
+    <script src="scripts/controllers/matrix/mostviewed.ctrl.js"></script>
+    <script src="scripts/controllers/matrix/mostrecent.ctrl.js"></script>
+    <script src="scripts/controllers/main/FilterUiGridCtrl.js"></script>
+    
+    <!-- Component -->
+    <script src="scripts/component/matrix/mostviewed.service.js"></script>
+    <script src="scripts/component/matrix/mostrecent.service.js"></script>    
+    <!-- endbuild -->
 </body>
 </html>
